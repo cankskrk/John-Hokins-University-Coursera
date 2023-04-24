@@ -1,0 +1,116 @@
+#header {
+    text-align: center;
+    font-family: monospace;
+}
+
+.grid-container {
+    display: grid;
+    text-align: center;
+    padding: 10px;
+    grid-template-columns: auto;
+    gap: 10px;
+}
+
+.item {
+    position: relative;
+    background-color: darkgrey;
+    color: black;
+    text-align: center;
+    border: solid 3px black;
+}
+
+.title1 {
+    position: absolute;
+    right: 0;
+    background-color: pink;
+    width: min-content;
+    padding: 8px 15px;
+    border-left: solid black 2px;
+    border-bottom: solid black 2px;
+    font-family: monospace;
+    font-size: large;
+}
+
+.title2 {
+    position: absolute;
+    right: 0;
+    background-color: red;
+    width: min-content;
+    padding: 8px 15px;
+    border-left: solid black 2px;
+    border-bottom: solid black 2px;
+    font-family: monospace;
+    font-size: large;
+}
+
+.title3 {
+    position: absolute;
+    right: 0;
+    background-color: yellow;
+    width: min-content;
+    padding: 8px 15px;
+    border-left: solid black 2px;
+    border-bottom: solid black 2px;
+    font-family: monospace;
+    font-size: large;
+}
+
+.description {
+    padding: 50px 10px 30px 10px;
+    font-family: monospace;
+}
+
+/* For Desktop */
+@media only screen and (min-width: 992px) {
+    .grid-item1 {
+        grid-row: 1;
+        grid-column: 1 
+    }
+    
+    .grid-item2 {
+        grid-row: 1;
+        grid-column: 2 
+    }
+    
+    .grid-item3 {
+        grid-row: 1;
+        grid-column: 3 
+    }
+}
+
+/* For Tablet */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .grid-item1 {
+        grid-row: 1;
+        grid-column: 1 
+    }
+    
+    .grid-item2 {
+        grid-row: 1;
+        grid-column: 2
+    }
+    
+    .grid-item3 {
+        grid-row: 2;
+        grid-column: 1 / span 2
+    }
+}
+
+
+/* For Mobile */
+@media only screen and (max-width: 767px) {
+    .grid-item1 {
+        grid-row: 1;
+        grid-column: 1 
+    }
+    
+    .grid-item2 {
+        grid-row: 2;
+        grid-column: 1
+    }
+    
+    .grid-item3 {
+        grid-row: 3;
+        grid-column: 1 
+    }
+} 
