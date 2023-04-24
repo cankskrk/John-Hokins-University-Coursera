@@ -1,0 +1,84 @@
+#header {
+    text-align: center;
+    font-family: monospace;
+    margin: 50px 0;
+}
+
+.grid-container {
+    display: grid;
+    text-align: center;
+    padding: 10px;
+    grid-template-columns: auto;
+    gap: 10px;
+}
+
+.item {
+    background-color: darkgrey;
+    color: black;
+    text-align: center;
+    border: solid 3px black;
+}
+
+.title {
+    margin: auto;
+    width: min-content;
+    padding: 15px 15px;
+    font-family: monospace;
+    font-size: x-large;
+}
+
+.description {
+    padding: 10px 10px 30px 10px;
+    font-family: monospace;
+}
+
+#navbar {
+    margin-bottom: 4rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    color: black;
+    font-family: monospace;
+  }
+  
+  .burger-menu {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .burger-menu .line {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #fff;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  .nav-links li a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    font-family: monospace;
+    font-weight: 500;
+  }
